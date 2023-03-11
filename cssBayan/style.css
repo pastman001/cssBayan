@@ -1,0 +1,19 @@
+.container {
+    margin: 10px;
+    padding: 10px 30%;
+    background-color: gray;
+
+}
+img{
+    max-width: 100px;
+}
+li{
+    list-style-type: none;
+}
+.img__container{
+display: none;
+}
+.checkboxA:checked + .img__container {
+    display: block;
+
+}
