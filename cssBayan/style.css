@@ -3,14 +3,9 @@
     background-color: rgb(207, 206, 206)
 }
 
-.main__container:hover {
-    cursor: pointer;
-}
-
 .container {
-    border-bottom: 1px black solid;
+    border-bottom: 1px rgb(82, 82, 82) solid;
 }
-
 ul{
     padding-left: 0;
 }
@@ -36,17 +31,25 @@ img{
     max-width: 100%;
 }
 
+.text{
+    color: inherit;
+}
 
 
 .img__container{
-    display: block;
+    display: table;
     max-width: 80%;
     padding: 1% 5%;
     margin: auto;
+    align-items: center;
 }
 
 .checkboxA{
    display: none;
+}
+
+.checkboxA:checked + .li {
+    color: blue;
 }
 
 
@@ -75,9 +78,15 @@ img{
         max-height: 840px;
     }
     .container{
+        font-size: 3em;
     }
+    
     li{
     }
     .main__container{
+        margin: 0 20%;
+    }
+    .text{
+        
     }
 }
