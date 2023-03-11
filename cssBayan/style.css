@@ -21,10 +21,12 @@ li{
     overflow: hidden;
     max-height: 1em;
     transition-duration: 5s;
+    color: blue;
 }
 
 li:hover{
     cursor: pointer;
+    color: black;
 }
 
 img{
@@ -35,6 +37,8 @@ img{
     color: inherit;
 }
 
+.icon{
+}
 
 .img__container{
     display: table;
@@ -48,8 +52,8 @@ img{
    display: none;
 }
 
-.checkboxA:checked + .li {
-    color: blue;
+.checkboxA:checked + li {
+    color: black;
 }
 
 
