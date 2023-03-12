@@ -1,16 +1,26 @@
 .main__container {
-    padding: 10px;
+    padding: 5%;
     background-color: rgb(207, 206, 206);
 }
 
 .container {
     border-bottom: 1px rgb(82, 82, 82) solid;
 }
+
+h3{
+    padding: 10px;
+}
+
 ul{
     padding-left: 0;
 }
+
 ul:hover{
     cursor: pointer;
+}
+
+ul:hover ~ li{
+    color: black;
 }
 
 li{
@@ -29,15 +39,29 @@ li:hover{
     color: black;
 }
 
-img{
+.mem{
     max-width: 100%;
 }
 
+
+
 .text{
     color: inherit;
+    display: inline-block;
 }
 
-.icon{
+.icon__x{
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    align-items: center;
+    margin: auto;
+    transition-duration: 5s;
+    transition-property: transform;
+    
+}
+.checkboxA:checked ~ .icon__x {
+    transform: rotate(45deg);
 }
 
 .img__container{
@@ -49,7 +73,7 @@ img{
 }
 
 .checkboxA{
- 
+    display: none;
 }
 
 .checkboxA:checked + li {
@@ -75,6 +99,9 @@ img{
     }
     .checkboxA:checked + li {
         max-height: 740px;
+    } 
+    .container{
+        font-size: 1em;
     }
  }
 @media (max-width: 1920px) {
@@ -82,13 +109,13 @@ img{
         max-height: 840px;
     }
     .container{
-        font-size: 3em;
+        font-size: 2em;
     }
     
     li{
     }
     .main__container{
-        margin: 0 20%;
+        font-size: 100%
     }
     .text{
         
